@@ -1,0 +1,38 @@
+﻿@model Poc.GraphQL.Web.Models.AirlineModel
+<div class="row">
+    <div class="col-3">
+        <img src="~/images/@Model.LogoFileName" alt="Product image" />
+    </div>
+    <div class="col-9">
+        <div class="row">
+            <div class="col-12">
+                <h3>@Model.Name</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                @Model.Description
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-3">
+                In the world since: @Model.CreatedAt.Year
+            </div>
+            <div class="col-3">
+                Stars: @Model.Rating
+            </div>
+            <div class="col-3">
+                Number Of Planes: $@Model.NumberOfPlanes
+            </div>
+        </div>
+        <h6>Reviews:</h6>
+        <div id="reviews"></div>
+        <a asp-action="AddReview" asp-route-airlineId="@Model.Id">Add a review</a>
+    </div>
+</div>
+<script src="https://unpkg.com/apollo-client-browser@1.9.0"></script>
+<script src="~/js/site.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    renderReviews(@Model.Id);
+</script>

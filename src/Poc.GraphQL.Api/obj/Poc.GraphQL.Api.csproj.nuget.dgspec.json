@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\src\\Poc.GraphQL.Sample\\src\\Poc.GraphQL.Api\\Poc.GraphQL.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\src\\Poc.GraphQL.Sample\\src\\Poc.GraphQL.Api\\Poc.GraphQL.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\src\\Poc.GraphQL.Sample\\src\\Poc.GraphQL.Api\\Poc.GraphQL.Api.csproj",
+        "projectName": "Poc.GraphQL.Api",
+        "projectPath": "C:\\src\\Poc.GraphQL.Sample\\src\\Poc.GraphQL.Api\\Poc.GraphQL.Api.csproj",
+        "packagesPath": "C:\\Users\\claudiogg\\.nuget\\packages\\",
+        "outputPath": "C:\\src\\Poc.GraphQL.Sample\\src\\Poc.GraphQL.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\claudiogg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "GraphQL.Server.Transports.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "GraphQL.Server.Transports.WebSockets": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "GraphQL.Server.Ui.Playground": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
